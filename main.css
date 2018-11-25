@@ -436,6 +436,9 @@ li{
     font-size:18px;
     text-align: center;
   }
+  #wrapper #about {
+    padding: 60px 0 50px;
+  }
   #wrapper #about .content {
     padding: 5px 13px;
   }
@@ -462,6 +465,12 @@ li{
     width: 120px;
     height: 120px;
   }
+  #wrapper #contact {
+    padding-top: 50px;
+  }
+  #wrapper #about {
+    padding: 50px 0 40px;
+  }
   #wrapper #contact p {
     font-size: 13px;
   }
@@ -482,7 +491,7 @@ li{
     margin-right: 20px;
   }
   #wrapper #about {
-    padding: 75px 0 65px;
+    padding: 40px 0 30px;
   }
   #wrapper #gallery img {
     width: 100px;
