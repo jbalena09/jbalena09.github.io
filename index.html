@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="consent.css" />
     <!--FANCY GALLERY HERE -->
     <script src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="jquery.fancybox.min.css" />
@@ -222,5 +222,19 @@ function yellow(){
 
 //Yellow button
 </script>
+<script src="cookieconsent.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#3085d6"
+        }
+      }
+    })});
+    </script>
   </body>
 </html>
