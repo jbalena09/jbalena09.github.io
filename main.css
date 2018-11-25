@@ -339,6 +339,10 @@ li{
   #wrapper #about h1, #wrapper #gallery h1{
     font-size: 60px;
   }
+  #wrapper #gallery img{
+    width: 250px;
+    height: 250px;
+  }
 
 
 }
