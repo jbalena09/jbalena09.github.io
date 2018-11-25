@@ -236,7 +236,7 @@ li{
 }
 /* Contact Here */
 #wrapper #contact {
-  padding-top: 100px;
+  padding-top: 40px;
 	display: block;
 }
 #wrapper #contact p{
@@ -347,10 +347,11 @@ li{
     display: inherit;
   }
     .right{
-    margin-right: 29%;
+    margin-right: 100px;
   }
 }
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 769px) {
   .cd-top {
     right: 20px;
     bottom: 20px;
@@ -446,7 +447,7 @@ li{
     font-size:30px;
   }
   .right{
-    margin-right: 25px;
+    margin-right: 48px;
   }
   #wrapper #gallery img{
     width: 150px;
@@ -457,6 +458,7 @@ li{
     height: 160px;
   }
 }
+
 @media screen and (max-width: 375px){
   .right {
     margin-right: 35px;
@@ -466,7 +468,7 @@ li{
     height: 120px;
   }
   #wrapper #contact {
-    padding-top: 50px;
+    padding-top: 20px;
   }
   #wrapper #about {
     padding: 50px 0 40px;
