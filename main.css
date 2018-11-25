@@ -343,6 +343,10 @@ li{
     width: 250px;
     height: 250px;
   }
+  #wrapper #gallery img:hover{
+     width: 270px;
+    height: 270px;
+  }
 
 
 }
@@ -383,14 +387,6 @@ li{
   /*Gallery */
   #wrapper #about h1, #wrapper #gallery h1{
     font-size: 40px;
-  }
-  #wrapper #gallery img{
-    width:250px;
-    height: 250px;
-  }
-  #wrapper #gallery img:hover{
-    width:270px;
-    height: 270px;
   }
   #wrapper #gallery #rightAlign{
     text-align: right;
