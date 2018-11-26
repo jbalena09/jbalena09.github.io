@@ -383,21 +383,23 @@ li{
   }
   /*Contact*/
   #wrapper #contact p{
-    font-size: 18px;
+    font-size: 17px;
   }
   #wrapper #contact ul li a{
     font-size:15px;
   }
   /*Footer*/
   #wrapper #footer h3{
-    font-size:18px;
+    font-size:15px;
   }
-
     /*UC PAGE HERE*/
 
-
 }
-
+@media screen and (max-width: 599px){
+  #wrapper #gallery #galleryMain{
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 450px){
   #wrapper #header h1{
     font-size:25px;
@@ -432,6 +434,9 @@ li{
   }
   #wrapper #about h1, #wrapper #gallery h1{
     font-size:30px;
+  }
+    #wrapper #gallery #galleryMain{
+    justify-content: space-between;
   }
   #wrapper #gallery img{
     width: 150px;
