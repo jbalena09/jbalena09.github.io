@@ -203,12 +203,11 @@ li{
 
 /*Gallery Starts Here*/
 #wrapper #gallery #galleryMain{
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-}
-#wrapper #gallery div{
-  padding:0;
+    flex-wrap: wrap;
+    padding: 21px;
 }
 #wrapper #gallery h1{
     margin: 15px auto 50px;
@@ -217,6 +216,10 @@ li{
     font-weight: 700;
     width:100%;
     text-align: center;
+}
+#wrapper #gallery img{
+  flex-grow: 1;
+  width: 33%;
 }
 #wrapper #gallery img{
   margin:20px 0;
@@ -347,28 +350,12 @@ li{
      width: 270px;
     height: 270px;
   }
-
-
-}
-@media only screen and (max-width: 991px) {
-    #inheritIMG{
-    display: inherit;
-  }
-    .right{
-    margin-right: 44%;
-  }
-}
-@media screen and (max-width: 812px){
-  .right{
-    margin-right: 105px;
-  }
 }
 @media only screen and (max-width: 769px) {
   .cd-top {
     right: 20px;
     bottom: 20px;
   }
-
   /*HEADER */
   #wrapper #banner ul li{
     letter-spacing: 0px;
@@ -385,18 +372,14 @@ li{
     font-size:16px;
   }
   /*Gallery */
+  #wrapper #gallery #galleryMain{
+    padding:0;
+  }
   #wrapper #about h1, #wrapper #gallery h1{
     font-size: 40px;
   }
   #wrapper #gallery #rightAlign{
     text-align: right;
-  }
-  #inheritIMG{
-    display: inherit;
-  }
-
-  .right{
-    margin-right:170px;
   }
   /*Contact*/
   #wrapper #contact p{
@@ -450,9 +433,6 @@ li{
   #wrapper #about h1, #wrapper #gallery h1{
     font-size:30px;
   }
-  .right{
-    margin-right: 48px;
-  }
   #wrapper #gallery img{
     width: 150px;
     height: 150px;
@@ -464,9 +444,6 @@ li{
 }
 
 @media screen and (max-width: 375px){
-  .right {
-    margin-right: 35px;
-  }
   #wrapper #gallery img {
     width: 120px;
     height: 120px;
@@ -493,9 +470,6 @@ li{
 }
 
 @media screen and (max-width: 320px){
-  .right {
-    margin-right: 20px;
-  }
   #wrapper #about {
     padding: 40px 0 30px;
   }
