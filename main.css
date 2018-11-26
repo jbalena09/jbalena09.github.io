@@ -321,7 +321,7 @@ li{
   opacity: 1;
 }
 
-
+/*RESPONSIVE STARTS HERE*/
 @media only screen and (max-width: 1024px) {
   .cd-top {
     height: 60px;
@@ -503,9 +503,8 @@ li{
   }
 }
 
+/*RESPONSIVE ENDS HERE*/
 @keyframes caret{50%{background-color:transparent}}
-
-
 /*UC WEB PAGE*/
 body{
   margin: 0;
