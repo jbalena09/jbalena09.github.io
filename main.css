@@ -338,7 +338,10 @@ li{
   #wrapper #banner2 p{
     font-size:25px;
   }
-  /*ABOUT ME*/
+  #comment{
+    display: none;
+  }
+  /*Gallery*/
   #wrapper #about h1, #wrapper #gallery h1{
     font-size: 60px;
   }
