@@ -351,6 +351,11 @@ li{
     height: 270px;
   }
 }
+@media only screen and (max-width: 877px) {
+  #wrapper #footer h3{
+    font-size: 24px
+  }
+}
 @media only screen and (max-width: 769px) {
   .cd-top {
     right: 20px;
@@ -481,6 +486,9 @@ li{
   #wrapper #gallery img {
     width: 100px;
     height: 100px;
+  }
+    #wrapper #contact p {
+    font-size: 11px;
   }
   #wrapper #contact {
     padding-top: 20px;
