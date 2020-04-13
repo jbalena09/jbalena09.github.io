@@ -63,14 +63,18 @@ li{
 .header .row .contact-me a:nth-child(1):hover{
 	color:white;
 	background-color:grey;
+	transition: 0.5s ease;
+	border-radius: 5px;
 }
 /*fb*/
 .header .row .contact-me a:nth-child(2):hover{
 	color:#3b5998;
+	transition: 0.5s ease;
 }
 /*twitter*/
 .header .row .contact-me a:nth-child(3):hover{
 	color:#00ACEE;
+	transition: 0.5s ease;
 }
 .about .row{
 	margin-top:150px;
@@ -166,7 +170,8 @@ li{
 
 /*projects*/
 .project .row h2{
-	text-align: center;
+	text-align: left;
+	font-size:3em;
 }
 
 .project .row h3, .project .row p{
@@ -175,4 +180,124 @@ li{
 
 .project .row p{
 	padding-left: 3em;
+}
+.project .row a{
+	position: relative;
+	color: #000;
+	text-decoration: none;
+}
+.project .row a:hover{
+	color:#89CFF0;
+}
+.project .row p a:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: #89CFF0;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+.project .row p a:hover:before{
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+.project .row .contents{
+	display: flex;
+	justify-content: center;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0px;
+}
+
+.project{
+	padding: 0 0 50px 0;
+}
+
+/* Contact Here */
+#contact {
+	padding-top: 40px;
+	display: block;
+	border-top:1px solid grey;
+}
+#contact p{
+	font-family: Monaco,Consolas,Lucida Console,monospace;
+	font-size: 30px;
+	margin: 0;
+}
+#contact a{
+	transition: 1s ease;
+}
+#contact a:hover{
+	color:#80ced6;
+	transition: 0.5s ease;
+}
+#contact ul{
+	padding:0;
+}
+#contact ul li{
+	margin:0 20px 0 0;
+}
+#contact ul li a{
+	font-size: 20px;
+}
+#contact ul li a,#wrapper #contact ul li a:hover{
+	transition: 1s ease;
+}
+/* Copy right*/
+#footer h3{
+	margin:0 auto;
+	padding:20px 0;
+	font-size: 1.75rem;
+	/*font-weight: 500;*/
+	text-align: center;
+}
+
+/*Back to Top - by CodyHouse.co */
+.cd-top {
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #80ced6 url(img/top.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: #80ced6;
+  opacity: 1;
 }
