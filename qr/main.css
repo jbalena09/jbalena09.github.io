@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.qrcontainer {
+  display: none;
+}
+
 .qrcontainer #canvas {
   border: 1px solid red;
 }
