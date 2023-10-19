@@ -1,17 +1,19 @@
 #qrcode {
-  width: 160px;
-  height: 160px;
+  width: 256px;
+  height: 256px;
   margin-top: 15px;
+  position: relative;
 }
 
-#qrcode #img1{
-  display: block;
-    border: 1px solid red;
-    padding: 5px;
+.qrcontainer #canvas {
+  border: 1px solid red;
 }
 
-.qrcontainer .logo {
-  top: 135px;
-  left: 95px;
+#img2 {
   position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
