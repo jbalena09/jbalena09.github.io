@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Generator</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+  </head>
+  <body>
+    <input id="text" type="text" value="type here" style="width: 13%" />
+    <input type="button" value="Enter" />
+    <br />
+    <div class="qrcontainer">
+      <div id="qrcode"></div>
+    </div>
+  </body>
+
+  <script>
+    let qrcode = new QRCode("qrcode");
+
+    function makeCode() {
+      var elText = document.getElementById("text");
+
+      if (!elText.value) {
+        elText.focus();
+        return;
+      }
+
+      qrcode.makeCode(elText.value);
+    }
+
+    makeCode();
+
+    $("#text")
+      .on("blur", function () {
+        makeCode();
+      })
+      .on("keydown", function (e) {
+        if (e.keyCode == 13) {
+          makeCode();
+        }
+      });
+  </script>
+</html>
