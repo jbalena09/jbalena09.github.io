@@ -15,7 +15,7 @@
   <body>
   
     <input id="text" type="text" value="type here" style="width: 250px" />
-    <input type="button" value="Enter" />
+    <input id="btnSubmit" type="submit" value="Enter" />
     <br />
     <div class="qrcontainer">
       <div id="qrcode"></div>
@@ -44,16 +44,20 @@
       qrcode.makeCode(elText.value);
     }
 
-    makeCode();
+    $("#btnSubmit").click(function () {
+      makeCode();
+    });
 
-    $("#text")
-      .on("blur", function () {
-        makeCode();
-      })
-      .on("keydown", function (e) {
-        if (e.keyCode == 13) {
-          makeCode();
-        }
-      });
+	  
+
+    // $("#text")
+    //   .on("blur", function () {
+    //     makeCode();
+    //   })
+    //   .on("keydown", function (e) {
+    //     if (e.keyCode == 13) {
+    //       makeCode();
+    //     }
+    //   });
   </script>
 </html>
