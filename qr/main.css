@@ -4,6 +4,12 @@
   margin-top: 15px;
 }
 
+#qrcode #img1{
+  display: block;
+    border: 1px solid red;
+    padding: 5px;
+}
+
 .qrcontainer .logo {
   top: 135px;
   left: 95px;
