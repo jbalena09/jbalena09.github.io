@@ -1454,8 +1454,8 @@ var QRCode;
    */
   QRCode = function (el, vOption) {
     this._htOption = {
-      width: 256,
-      height: 256,
+      width: 512,
+      height: 512,
       typeNumber: 4,
       colorDark: "#000000",
       colorLight: "#ffffff",
@@ -1538,4 +1538,3 @@ var QRCode;
    */
   QRCode.CorrectLevel = QRErrorCorrectLevel;
 })();
-
