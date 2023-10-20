@@ -14,20 +14,19 @@
   </head>
   <body>
     <center>
-      <input id="text" type="text" value="type here" style="width: 250px" />
-      <input id="btnSubmit" type="submit" value="Enter" />
-      <br />
       <div class="qrcontainer">
         <div id="qrcode">
-          <img
-            id="img2"
-            src="logo.jpg"
-            width="160"
-            height="160"
-            style="display: none"
-          />
+          <img id="img2" src="logo.jpg" width="160" height="160" />
         </div>
       </div>
+      <input
+        id="text"
+        type="text"
+        value="type here"
+        style="width: 450px; margin-top: 50px"
+      />
+      <input id="btnSubmit" type="submit" value="Enter" />
+      <br />
 
       <h4>How to use?</h4>
       <h4>
@@ -35,8 +34,10 @@
       </h4>
 
       <h4>
-        Please screenshot your output dont "save image as.." the logo is ontop
-        of the qrcode
+        <span
+          >Please screenshot your output dont "save image as.." the logo is
+          ontop of the qrcode</span
+        >
       </h4>
       <h4>Note: this page is currently under construction.</h4>
     </center>
@@ -55,6 +56,8 @@
 
       qrcode.makeCode(elText.value);
     }
+
+    makeCode();
 
     $("#btnSubmit").click(function () {
       $("#img2").css("display", "block");
